@@ -62,3 +62,5 @@ function getTotalValue() {
 }
 
 displayResult();
+
+console.log('created by ravi...');
