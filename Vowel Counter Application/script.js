@@ -46,3 +46,5 @@ function countWords() {
     const words = document.getElementById("words");
    words.textContent = "Total Words: " + wordCount;
 }
+
+console.log('created by ravi...');
