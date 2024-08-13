@@ -1,0 +1,151 @@
+body{
+    background-image: linear-gradient(to right,#01257D, #00FFFF);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+
+}
+
+.contanier{
+    background-color:#178582;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: card 1s ease-in-out;
+    color: #000000;
+}
+
+@keyframes card {
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
+h1{
+    color: #111439;
+    font-size: 32px;
+    opacity: 1;
+
+}
+
+.poll{
+    margin-top: 20px;
+}
+
+h2{
+    color: #111439;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    background-color:#01257D;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 70px;
+    
+}
+
+.option{
+    margin-bottom: 10px;
+    color: #F8F8F9;
+}
+
+.option:hover{
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+}
+
+.option input[type = "radio"]:checked + label{
+    background-color: blue;
+    color: #E7473C;
+
+}
+
+button{
+    background-color: #BFA181;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #8d0505;
+    color: #BFA181;
+}
+
+
+#result{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0A1828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-result{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.option-text{
+    flex: 1;
+}
+
+.bar-container{
+    flex: 3;
+    background-color: #ffffff;
+    height: 10px;
+    margin-left:10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar{
+    height: 100%;
+    background-color:#8d0505;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.percentage{
+    flex: 1;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #8d0505;
+}   
