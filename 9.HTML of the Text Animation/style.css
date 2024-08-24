@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(315deg, #000f38 0%,#640088 74%);
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 0, 157);
+    line-height: 100vh;
+    font-size: 5rem;
+
+}
+
+span{
+    display: inline-block;
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateY(50px) translateX(50px);
+}
+
+span.fade{
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+    color: rgb(255, 177, 202);
+}
