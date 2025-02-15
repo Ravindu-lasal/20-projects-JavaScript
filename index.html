@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Button List</title>
+    <style>
+        @keyframes buttonAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #010024;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #007bff;
+            color: #000550;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav h1 {
+            font-weight: 900;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin: 0 0 30px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            animation: buttonAnimation 1s infinite;
+            margin: 0 20px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(100% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav h1 {
+                font-size: 18px;
+            }
+
+            a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>20 projects JavaScript</h1>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h3>1. Vowel Counter Application</h3>
+            <a href="./Vowel Counter Application/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>2. Stopwatch Timer</h3>
+            <a href="./Stopwatch timer/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>3. Poll System Application</h3>
+            <a href="./3.Poll System Application/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>4. Random Password Application</h3>
+            <a href="./4.Random Password Application/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>5. Cash Calculator Application</h3>
+            <a href="./5.Cash Calculator Application/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>6. Random HEX Color Card Generator</h3>
+            <a href="./6.Random HEX Color Card Generator/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>7. Notes Taking Application</h3>
+            <a href="./7.Notes Taking Application/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>8. Dictionary Application</h3>
+            <a href="./8.Dictionary Application/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>9. HTML of the Text Animation</h3>
+            <a href="./9.HTML of the Text Animation/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>10. Mouse Wheel Zoom In and Out Project</h3>
+            <a href="./10.Mouse Wheel Zoom In and Out Project/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>11. Random paragraph Generator</h3>
+            <a href="./11.Random paragraph Generator/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>12. Loan Calculator Application</h3>
+            <a href="./12.Loan Calculator/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>13. Tip Calculator Application</h3>
+            <a href="./13.Tip Calculator Application/index.html">View</a>
+        </div>
+        <div class="card">
+            <h3>Card 4</h3>
+            <a href="#">View</a>
+        </div>
+        <div class="card">
+            <h3>Card 5</h3>
+            <a href="#">View</a>
+        </div>
+        <div class="card">
+            <h3>Card 6</h3>
+            <a href="#">View</a>
+        </div>
+        <div class="card">
+            <h3>Card 7</h3>
+            <a href="#">View</a>
+        </div>
+        <div class="card">
+            <h3>Card 8</h3>
+            <a href="#">View</a>
+        </div>
+        <div class="card">
+            <h3>Card 9</h3>
+            <a href="#">View</a>
+        </div>
+        <div class="card">
+            <h3>Card 10</h3>
+            <a href="#">View</a>
+        </div>
+    </div>
+    <script>
+        function getRandomTintColor() {
+            const baseColor = 200; // Light base color
+            const variation = 55; // Variation to ensure light tints
+            const r = baseColor + Math.floor(Math.random() * variation);
+            const g = baseColor + Math.floor(Math.random() * variation);
+            const b = baseColor + Math.floor(Math.random() * variation);
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            const nav = document.querySelector('nav');
+            nav.style.backgroundColor = getRandomTintColor();
+            cards.forEach(card => {
+                card.style.backgroundColor = getRandomTintColor();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background: linear-gradient(315deg, #000f38 0%,#640088 80%);
+    font-family: sans-serif;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ecb7b7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1 {
+    font-size: 2.5rem;
+    color: #790b01;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input and Button Styles */
+input[type="number"] {
+    width: 120px;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #1a00ad;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+
+button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff9a8b;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #ff4d3a;
+}
+
+/* Output Text Styles */
+.item {
+    margin-top: 20px;
+}
+
+#outputText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 20px;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+p{
+    font-weight: 500;
+}
+
+/* Responsive Styles */
+
+/* Mobile View (Portrait) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="number"], button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #outputText {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    input[type="number"], button {
+        width: 80%;
+    }
+
+    #outputText {
+        font-size: 1.1rem;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input[type="number"], button {
+        width: auto;
+    }
+}
